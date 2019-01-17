@@ -104,4 +104,22 @@
         }
     }
   }
+  .form-section {
+    border-top: 2px dashed @navigation-border;
+    padding: 30px 0;
+    .flex(column, space-between, center);
+    h2 {
+      font-size: 4rem;
+      padding-bottom: 20px;
+    }
+    form {
+      .flex(row, center, center);
+      @media (max-width: 720px) {
+        .flex(column);
+      }
+      @media @mobile {
+        .flex(column);
+      }
+    }
+  }
 }// home
