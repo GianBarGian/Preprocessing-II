@@ -1,0 +1,22 @@
+.top-nav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    .flex(row, space-between, center);
+    .logo{
+        .anchor();
+    }
+    .nav {
+        width: 50%;
+        .flex(row, space-evenly, center);
+        a{
+            .anchor();
+            font-size: 1.6rem;
+        }   
+    }
+}
+
+.div-line {
+    border-top: 2px dashed @navigation-border;
+}
