@@ -1,1 +1,30 @@
-// Navigation Styles here
+.top-nav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    .flex(row, space-between, center);
+    @media @mobile {
+        .flex(column, space-between, center);
+        padding: 15px 0;  
+        height: 110px;
+    }
+    .logo{
+        .anchor();
+    }
+    .nav {
+        width: 50%;
+        .flex(row, space-evenly, center);
+        @media @mobile {
+            width: 100%;
+        }
+        a{
+            .anchor();
+            font-size: 1.6rem;
+        }   
+    }
+}
+
+.div-line {
+    border-top: 2px dashed @navigation-border;
+}
